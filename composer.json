@@ -1,0 +1,21 @@
+{
+    "name": "brekitomasson/advent-of-code",
+    "description": "Advent of Code",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Breki Tomasson",
+            "email": "breki.tomasson@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BrekiTomasson\\AdventOfCode\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/collections": "^8.19",
+        "psy/psysh": "^0.10.5"
+    }
+}
