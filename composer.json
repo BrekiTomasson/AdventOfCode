@@ -3,6 +3,11 @@
     "description": "Advent of Code",
     "type": "project",
     "license": "MIT",
+    "scripts": {
+        "test": [
+            "XDEBUG_MODE=coverage pest --coverage"
+        ]
+    },
     "authors": [
         {
             "name": "Breki Tomasson",
@@ -15,7 +20,11 @@
         }
     },
     "require": {
-        "illuminate/collections": "^8.19",
-        "psy/psysh": "^0.10.5"
+        "illuminate/collections": "^8.43",
+        "psy/psysh": "^v0.10"
+    },
+    "require-dev": {
+        "pestphp/pest": "^v1.3",
+        "roave/security-advisories": "dev-latest"
     }
 }

@@ -2,15 +2,16 @@
 
 namespace BrekiTomasson\AdventOfCode\Common;
 
-use Illuminate\Support\Collection;
+interface Day {
 
-abstract class Day {
+    /**
+     * This method returns the answer to the day's first part.
+     */
+    public function solvePartOne();
 
-    public Collection $input;
-    public Collection $testInput;
-
-    public string|int $partOneTestExpectedResult;
-    public string|int $partTwoTestExpectedResult;
-
+    /**
+     * This method returns the answer to the day's second part.
+     */
+    public function solvePartTwo();
 
 }

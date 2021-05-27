@@ -3,36 +3,32 @@
 namespace BrekiTomasson\AdventOfCode\Common;
 
 use BrekiTomasson\AdventOfCode\Exceptions\FileNotFoundException;
-use Exception;
 use Illuminate\Support\Collection;
 
 class Input {
 
-    /** @var string The raw input as read from the file. */
+    /**
+     * @var string The raw input as read from the file.
+     */
     protected string $rawInput;
 
-    /** @var Collection The input, parsed to a Collection. */
+    /**
+     * @var Collection The input, parsed to a Collection.
+     */
     public Collection $input;
 
-    /** @var string The directory that the input files are found. */
+    /**
+     * @var string The directory in which the input files are found.
+     */
     private string $inputDirectory = __DIR__ . '/../Input/';
 
-    /**
-     * Input constructor.
-     *
-     * @param  string  $file
-     */
     public function __construct(string $file)
     {
         $this->rawInput = $this->loadFile($file);
     }
 
     /**
-     * Static method acting as a shortcut to the constructor.
-     *
-     * @param  string  $file
-     *
-     * @return static
+     * Static method offering a semantic shortcut to the constructor.
      */
     public static function get(string $file) : self
     {
@@ -41,10 +37,6 @@ class Input {
 
     /**
      * Load a file from the input directory.
-     *
-     * @param  string  $file
-     *
-     * @return string
      */
     protected function loadFile(string $file) : string
     {
@@ -55,9 +47,10 @@ class Input {
         return file_get_contents($this->inputDirectory . $file);
     }
 
-    // Methods that generate the Input collection.
-
-    public function asCollectionByLine($keepBlankRows = false) : self
+    /**
+     * Parses the raw contents of the input file into a collection, line by line.
+     */
+    public function asCollectionByLine(bool $keepBlankRows = false) : self
     {
         $this->input = new Collection(preg_split("/\r\n|\n|\r/", $this->rawInput));
 
@@ -68,8 +61,9 @@ class Input {
         return $this;
     }
 
-    // Methods that parse or process the Input collection.
-
+    /**
+     * Parses the raw contents of the input file as keys and values separated by an given string.
+     */
     public function toKeyValBySeparator(string $separator) : self
     {
         $this->input = $this->input->map(function ($value) use ($separator) {
@@ -85,12 +79,28 @@ class Input {
         return $this;
     }
 
+    /**
+     * Merge lines, separate by blank lines.
+     */
+    public function separateByBlanks() : self
+    {
+        // Replace all whitespaces with spaces.
+        $this->rawInput = trim(preg_replace("/\s/", ' ', $this->rawInput));
 
+        // Replace double spaces with linebreaks.
+        $this->rawInput = trim(preg_replace("/\s\s/", "\n", $this->rawInput));
+
+        return $this->asCollectionByLine();
+    }
+
+    /**
+     * Remove all blank rows from the parsed input.
+     *
+     * @return $this
+     */
     public function removeBlankRows() : self
     {
-        $this->input = $this->input->reject(function ($value, $key) {
-            return $value === '' || $value === null;
-        });
+        $this->input = $this->input->reject(fn($value, $key) => $value === '' || $value === null);
 
         return $this;
     }
