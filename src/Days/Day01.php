@@ -23,7 +23,7 @@ class Day01 extends DoesProcessing
         return true;
     }
 
-    public function partOneLogic()
+    public function partOneLogic() : int
     {
         $counter = $this->input->input->reduce(static function ($carry, $item) {
             $carry[1] += ($carry[0] < $item) ? 1 : 0;

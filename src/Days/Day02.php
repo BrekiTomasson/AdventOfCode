@@ -33,7 +33,7 @@ class Day02 extends DoesProcessing
         $this->position['y'] = 0;
     }
 
-    public function partOneLogic()
+    public function partOneLogic() : int
     {
         $this->resetPosition();
 
@@ -52,7 +52,7 @@ class Day02 extends DoesProcessing
         return $this->position['x'] * $this->position['y'];
     }
 
-    public function partTwoLogic()
+    public function partTwoLogic() : int
     {
         $this->resetPosition();
 
