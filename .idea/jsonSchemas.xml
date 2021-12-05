@@ -7,7 +7,7 @@
           <value>
             <SchemaInfo>
               <option name="name" value="composer.json" />
-              <option name="relativePathToSchema" value="https://json.schemastore.org/composer" />
+              <option name="relativePathToSchema" value="https://getcomposer.org/schema.json" />
               <option name="applicationDefined" value="true" />
               <option name="patterns">
                 <list>

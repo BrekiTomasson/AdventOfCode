@@ -22,13 +22,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php80" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php73" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/pestphp/pest-plugin-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pestphp/pest" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/pestphp/pest-plugin-expectations" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/facade/ignition-contracts" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/pestphp/pest-plugin-init" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pestphp/pest-plugin" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-invoker" />
@@ -63,6 +60,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/object-enumerator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pestphp/.temp" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/deprecation-contracts" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

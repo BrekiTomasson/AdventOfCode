@@ -9,30 +9,46 @@
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f19a2e-d2a5-44ad-abf3-1ac302dabe7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solutions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Input/2020-3-test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Input/2020-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Input/2020-4-test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Input/2020-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwentyTwenty/Day3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwentyTwenty/Day4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Exceptions-test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Pest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/TwentyTwenty-test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b6f19a2e-d2a5-44ad-abf3-1ac302dabe7c" name="Default Changelist" comment="Revamp, rebuild, retool.">
+      <change afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concerns/DoesProcessing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concerns/HasInput.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Contracts/Input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Days/Day01.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Days/Day02.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Input/1/1/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Input/1/1/test/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Input/2/1/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Input/2/1/test/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Year2021/Day01Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Year2021/Day02Test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AdventOfCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsonSchemas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsonSchemas.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Day.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Day.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Input.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Input.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exceptions/FileNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/FileNotFoundException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TwentyTwenty/Day1.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwentyTwenty/Day1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TwentyTwenty/Day2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TwentyTwenty/Day2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Day.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Input.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/FileNotFoundException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/2020-1-test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/2020-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/2020-2-test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/2020-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/2020-3-test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/2020-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/2020-4-test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/2020-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwentyTwenty/Day1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwentyTwenty/Day2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwentyTwenty/Day3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TwentyTwenty/Day4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Exceptions-test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Pest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Pest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/TwentyTwenty-test.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +72,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/container" />
@@ -77,13 +96,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/vendor/pestphp/pest-plugin-coverage" />
       <path value="$PROJECT_DIR$/vendor/pestphp/pest" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/vendor/pestphp/pest-plugin-expectations" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
-      <path value="$PROJECT_DIR$/vendor/pestphp/pest-plugin-init" />
       <path value="$PROJECT_DIR$/vendor/pestphp/pest-plugin" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
@@ -118,6 +134,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/pestphp/.temp" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lyNzcqDIegPib0c8naMv7KE2jc" />
@@ -137,12 +154,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="auto.test.manager.delay" value="1000" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="settings.json.schema" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -163,10 +181,10 @@
         </envs>
       </CommandLine>
       <option name="pestRunnerSettings">
-        <PestRunner directory="$PROJECT_DIR$/tests/Feature" file="$PROJECT_DIR$/tests/Feature/Exceptions-test.php" method="" scope="ConfigurationFile" options="--coverage" />
+        <PestRunner directory="$PROJECT_DIR$/tests/Feature" file="$PROJECT_DIR$/tests/Feature/Exceptions-test.php" method="" scope="ConfigurationFile" />
       </option>
       <option name="runnerSettings">
-        <PhpTestRunnerSettings directory="$PROJECT_DIR$/tests/Feature" file="$PROJECT_DIR$/tests/Feature/Exceptions-test.php" method="" scope="ConfigurationFile" options="--coverage" />
+        <PhpTestRunnerSettings directory="$PROJECT_DIR$/tests/Feature" file="$PROJECT_DIR$/tests/Feature/Exceptions-test.php" method="" scope="ConfigurationFile" />
       </option>
       <method v="2" />
     </configuration>
@@ -186,8 +204,17 @@
       <updated>1608565635393</updated>
       <workItem from="1608565638060" duration="18368000" />
       <workItem from="1608756694288" duration="1152000" />
-      <workItem from="1622052567585" duration="19890000" />
+      <workItem from="1622052567585" duration="20318000" />
+      <workItem from="1638706619730" duration="7114000" />
     </task>
+    <task id="LOCAL-00001" summary="Revamp, rebuild, retool.">
+      <created>1622083527511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622083527511</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +233,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Revamp, rebuild, retool." />
+    <option name="LAST_COMMIT_MESSAGE" value="Revamp, rebuild, retool." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AdventOfCode@Exceptions_test_php__FileNotFoundException_throws_the_right_exception.xml" NAME="Exceptions-test.php::FileNotFoundException throws the right exception Coverage Results" MODIFIED="1622071194368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
